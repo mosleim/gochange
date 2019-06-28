@@ -8,7 +8,7 @@ func main() {
 	route := gin.Default()
 	route.GET("/", func(c *gin.Context) {
 		c.JSON(200, gin.H{
-			"selama": "siang",
+			"selamat": "siang",
 		})
 	})
 	route.GET("/pagi", func(c *gin.Context) {
