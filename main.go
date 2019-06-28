@@ -11,5 +11,10 @@ func main() {
 			"selama": "malam",
 		})
 	})
+	route.GET("/pagi", func(c *gin.Context) {
+		c.JSON(200, gin.H{
+			"selamat": "pagi",
+		})
+	})
 	route.Run()
 }
